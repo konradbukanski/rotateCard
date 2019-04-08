@@ -34,6 +34,7 @@ body .card .front, body .card .back {
   transition: -webkit-transform .6s linear;
   transition: transform .6s linear;
   transition: transform .6s linear, -webkit-transform .6s linear;
+  border-radius: 20px;
 }
 
 body .card .front {
@@ -52,6 +53,10 @@ body .card .back {
 }
 
 body .card .back .back-content {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   color: #2c3e50;
   text-align: center;
   width: 100%;
